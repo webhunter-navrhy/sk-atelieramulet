@@ -54,7 +54,7 @@
     <h2>Z nášho blogu</h2>
     <ul class="clanky-nahlad" role="list">
       {% for c in data.clanky[:3] %}
-      <li><a href="{{ url('clanky') }}#{{ c.id }}"><h3>{{ c.nazov }}</h3><p>{{ c.text[0][:150] }}…</p></a></li>
+      <li><a href="{{ url('clanky') }}#{{ c.id }}"><h3>{{ c.nazov }}</h3><p>{{ c.text[0][:150]|trim(". ") }}…</p></a></li>
       {% endfor %}
     </ul>
     <p><a href="{{ url('clanky') }}">Všetky články →</a></p>

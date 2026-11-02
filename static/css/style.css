@@ -17,7 +17,7 @@ h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{f
 .hlavicka{position:sticky;top:0;z-index:10;background:rgba(251,248,238,.95);backdrop-filter:blur(6px);border-bottom:1px solid #e4dcc6}
 .hlavicka .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem;flex-wrap:wrap}
 .logo img{height:40px;width:auto}
-.hlavicka nav{display:flex;gap:1.4rem;flex-wrap:wrap}.hlavicka nav a{text-decoration:none;color:var(--fial-t);font-weight:700}
+.hlavicka nav{display:flex;gap:1.4rem;flex-wrap:wrap}.hlavicka nav a{padding:.55rem .2rem;text-decoration:none;color:var(--fial-t);font-weight:700}
 .hlavicka nav a:hover{color:var(--fial)}
 .hero{padding:3rem 0 2rem}.hero-grid{display:grid;gap:2rem;align-items:center}
 .hero-foto img{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
@@ -37,7 +37,7 @@ h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{f
 .terminy strong{color:var(--fial-t)}.terminy small{color:#456}
 .tim{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(10rem,1fr));text-align:center}
 .tim li{display:flex;flex-direction:column;align-items:center;gap:.3rem}.tim span{font-size:.9rem;color:#5a4a78}
-.kruh{width:140px;height:140px;border-radius:50%;object-fit:cover;margin-bottom:.4rem}
+.kruh{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.4rem}
 .clanky-nahlad{list-style:none;margin:0 0 1rem;padding:0;display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr))}
 .clanky-nahlad a{display:block;background:#fff;border-radius:var(--r);padding:1.2rem;text-decoration:none;color:var(--text);height:100%}
 .clanky-nahlad p{margin:0;font-size:.95rem}
