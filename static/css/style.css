@@ -76,3 +76,6 @@ input:focus,textarea:focus,a:focus-visible,button:focus-visible{outline:3px soli
 .blog a{display:grid;gap:1rem;align-items:center}.blog a img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
 @media(min-width:48rem){.blog a{grid-template-columns:16rem 1fr;gap:2rem}}
 .odkaz-velky,.kontakt-grid a[href^=mailto]{display:inline-block;padding:.7rem 0;min-height:44px}
+@media(max-width:59.99rem){.hero-foto img{height:55svh;min-height:360px;max-height:none;aspect-ratio:auto;object-position:60% 50%}}
+.kontakt-grid a[href^=mailto],.odkaz-velky{display:inline-flex;align-items:center}
+.kruh{image-rendering:auto}
