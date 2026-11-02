@@ -37,6 +37,7 @@
   <div class="wrap">
     <p class="soc">{% for s in site.sameas %}<a href="{{ s }}" rel="noopener">{{ s.split("/")[2].replace("www.","").split(".")[0]|capitalize }}</a> {% endfor %}</p>
     <p>{{ site.nazev }} · Bratislava</p>
+    {% if site.navrh %}<p><a href="{{ base }}admin/">Ukážka administrácie (heslo: admin)</a></p>{% endif %}
     {% if site.kontakt.email %}<p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>{% endif %}
     {% if site.kontakt.telefon %}<p><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></p>{% endif %}
   </div>
