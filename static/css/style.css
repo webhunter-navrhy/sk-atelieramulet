@@ -19,8 +19,8 @@ h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{f
 .logo img{height:56px;width:auto}
 .hlavicka nav{display:flex;gap:1.4rem;flex-wrap:wrap}.hlavicka nav a{padding:.55rem .2rem;text-decoration:none;color:var(--fial-t);font-weight:700}
 .hlavicka nav a:hover{color:var(--fial)}
-.hero{padding:3rem 0 2rem}.hero-grid{display:grid;gap:2rem;align-items:center}
-.hero-foto img{border-radius:var(--r) var(--r) 120px var(--r);width:100%;aspect-ratio:5/4;object-fit:cover;box-shadow:0 18px 40px rgba(51,9,104,.18)}
+.hero{padding:0}.hero-grid{display:grid;gap:0;align-items:stretch}.hero-text{padding:2rem 1.25rem}.hero-foto{order:-1}.hero-foto img{height:100%}
+.hero-foto img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
 .nadpis-mini{text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;color:var(--fial);margin:0 0 .8rem}
 .lead{font-size:1.25rem;max-width:34rem}
 .tlacidlo,button{display:inline-block;background:var(--fial);color:#fff;padding:.8rem 1.5rem;border-radius:999px;text-decoration:none;font:700 1rem "PT Serif",serif;border:2px solid var(--fial);cursor:pointer;margin:.3rem .4rem .3rem 0}
@@ -37,7 +37,7 @@ h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{f
 .terminy strong{color:var(--fial-t)}.terminy small{color:#456}
 .tim{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(10rem,1fr));text-align:center}
 .tim li{display:flex;flex-direction:column;align-items:center;gap:.3rem}.tim span{font-size:.9rem;color:#5a4a78}
-.kruh{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.4rem}
+.kruh{width:132px;height:132px;border-radius:50%;object-fit:cover;margin-bottom:.4rem}
 .clanky-nahlad{list-style:none;margin:0 0 1rem;padding:0;display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr))}
 .clanky-nahlad a{display:block;background:#fff;border-radius:var(--r);padding:1.2rem;text-decoration:none;color:var(--text);height:100%}
 .clanky-nahlad p{margin:0;font-size:.95rem}
@@ -51,7 +51,7 @@ input:focus,textarea:focus,a:focus-visible,button:focus-visible{outline:3px soli
 .kurzy dl{display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;margin:0;font-size:.97rem}.kurzy dt{font-weight:700;color:var(--fial)}.kurzy dd{margin:0}
 .clanok{padding:1.5rem 0;border-top:1px solid #e4dcc6}.datum{color:#6b5a88;font-size:.9rem;margin-top:-.4rem}
 .paticka{background:var(--fial-t);color:#e9e0f7;padding:2rem 0;margin-top:0}.paticka a{color:#fff}.paticka p{margin:.3rem 0}
-@media(min-width:60rem){.hero-grid{grid-template-columns:5fr 6fr}.kontakt-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:60rem){.hero-grid{grid-template-columns:2fr 3fr}.hero-foto{order:0}.hero-foto img{aspect-ratio:auto;min-height:32rem}.hero-text{display:flex;align-items:center;justify-content:flex-end;padding:3rem 3rem 3rem 1.25rem}.hero-in{max-width:30rem}.kontakt-grid{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .tah{position:relative;padding-bottom:.55em}
@@ -67,3 +67,12 @@ input:focus,textarea:focus,a:focus-visible,button:focus-visible{outline:3px soli
 .blog a{display:block;padding:1.2rem 0;text-decoration:none;color:var(--text)}.blog h3{margin:.1rem 0 .3rem;font-size:1.4rem}.blog p{margin:0;max-width:46rem}.blog .datum{margin:0}
 .blog a:hover h3{color:var(--fial)}
 @media(max-width:40rem){.logo img{height:44px}.hlavicka nav{gap:.7rem}.hlavicka nav a{font-size:.88rem}.hlavicka .wrap{min-height:3.6rem}}
+
+.hero-foto img{max-height:70vh}
+@media(min-width:60rem){.hero-foto img{max-height:none}}
+.tim strong{font-size:1.15rem}.tim span{font-size:1rem}
+.o-grid{display:grid;gap:1.5rem;margin-top:1rem}.o-foto img{width:100%;border-radius:var(--r);aspect-ratio:4/3;object-fit:cover}
+@media(min-width:60rem){.o-grid{grid-template-columns:1fr 1fr;gap:3rem;align-items:center}}
+.blog a{display:grid;gap:1rem;align-items:center}.blog a img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+@media(min-width:48rem){.blog a{grid-template-columns:16rem 1fr;gap:2rem}}
+.odkaz-velky,.kontakt-grid a[href^=mailto]{display:inline-block;padding:.7rem 0;min-height:44px}

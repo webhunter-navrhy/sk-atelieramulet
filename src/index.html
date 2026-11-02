@@ -3,14 +3,14 @@
 {% set cesta = '' %}
 {% block obsah %}
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-text">
+  <div class="hero-grid">
+    <div class="hero-text"><div class="hero-in">
       <p class="nadpis-mini">Ateliér Amulet · Bratislava</p>
       <h1 class="tah">{{ data.texty.hero_nadpis }}</h1>
       <p class="lead">{{ data.texty.hero_text }}</p>
       <p><a class="tlacidlo" href="{{ url('kurzy') }}">Pozrieť kurzy</a> <a class="tlacidlo druhe" href="#kontakt">Napísať nám</a></p>
-    </div>
-    <div class="hero-foto">{{ img('kaligrafia.jpg', 'Ruka píšuca kaligrafickým perom do zošita', sizes='(min-width: 60rem) 44rem, 100vw') }}</div>
+    </div></div>
+    <div class="hero-foto">{{ img('kaligrafia.jpg', 'Ruka píšuca kaligrafickým perom do zošita', sizes='(min-width: 60rem) 60vw, 100vw') }}</div>
   </div>
 </section>
 
@@ -40,7 +40,10 @@
 <section class="sekce" id="atelier">
   <div class="wrap">
     <h2 class="tah">O ateliéri</h2>
-    {% for o in data.texty.o_nas %}<p class="lead-p">{{ o }}</p>{% endfor %}
+    <div class="o-grid">
+      <div class="o-text">{% for o in data.texty.o_nas %}<p class="lead-p">{{ o }}</p>{% endfor %}</div>
+      <div class="o-foto">{{ img('individualne.jpg', 'Ateliér Amulet – tvorivé pomôcky', sizes='(min-width: 60rem) 30rem, 100vw') }}</div>
+    </div>
     <ul class="tim" role="list">
       {% for t in data.texty.tim %}
       <li>{{ img(t.foto, t.meno, sizes='160px', cls='kruh') }}<strong>{{ t.meno }}</strong><span>{{ t.rola }}</span></li>
@@ -54,10 +57,10 @@
     <h2 class="tah">Z nášho blogu</h2>
     <ul class="blog" role="list">
       {% for c in data.clanky[:3] %}
-      <li><a href="{{ url('clanky') }}#{{ c.id }}"><span class="datum">{{ c.datum }}</span><h3>{{ c.nazov }}</h3><p>{{ c.text[0][:170]|trim(". ") }}…</p></a></li>
+      <li><a href="{{ url('clanky') }}#{{ c.id }}">{{ img(['kaligrafia.jpg','vytvarne.jpg','talentovky.jpg'][loop.index0], c.nazov, sizes='(min-width: 48rem) 16rem, 90vw') }}<span class="bt"><h3>{{ c.nazov }}</h3><p>{{ c.text[0][:170]|trim(". ") }}…</p></span></a></li>
       {% endfor %}
     </ul>
-    <p><a href="{{ url('clanky') }}">Všetky články →</a></p>
+    <p><a class="odkaz-velky" href="{{ url('clanky') }}">Všetky články →</a></p>
   </div>
 </section>
 
