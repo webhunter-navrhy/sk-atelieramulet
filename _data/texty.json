@@ -1,0 +1,68 @@
+{
+  "hero_nadpis": "Tvoj amulet tvorivosti",
+  "hero_text": "Kurzy kaligrafie, kreslenia a maľovania v Bratislave. Už viac ako 15 rokov pre začiatočníkov aj pokročilých.",
+  "o_nas": [
+    "Ateliér Amulet sa už viac ako 15 rokov venuje organizovaniu kurzov, workshopov a tvorivých podujatí zameraných na kresbu, maľbu, kaligrafiu a ďalšie tvorivé prístupy prepájajúce umenie, sústredenie a osobný rozvoj.",
+    "Kurzy a workshopy vedú skúsení lektori – profesionálni výtvarníci a pedagógovia s dlhoročnou praxou. Dôležitou súčasťou je individuálny prístup, práca v menších skupinách a podnetná atmosféra."
+  ],
+  "tim": [
+    {
+      "meno": "Mgr. Pawla Šoltisová",
+      "rola": "zakladateľka ateliéru, lektorka",
+      "foto": "tim-pawla.png"
+    },
+    {
+      "meno": "Mgr. Jana Findlová",
+      "rola": "kaligrafia",
+      "foto": "tim-findlova.png"
+    },
+    {
+      "meno": "Stella Nedbayevska",
+      "rola": "ázijská kaligrafia",
+      "foto": "tim-stella.png"
+    },
+    {
+      "meno": "Mgr. art Jana Tenczer Juránková",
+      "rola": "japonská kaligrafia, tušová maľba",
+      "foto": "tim-tenczer.png"
+    }
+  ],
+  "ponuka": [
+    {
+      "nazov": "Kurzy kaligrafie",
+      "text": "Latinková, anglický krasopis, moderná, ázijská aj čajová kaligrafia.",
+      "foto": "kaligrafia.jpg",
+      "odkaz": "kurzy/#kaligrafia"
+    },
+    {
+      "nazov": "Kreslenie, maľovanie, tvorenie",
+      "text": "Kurzy kreslenia a maľby pre začiatočníkov aj pokročilých.",
+      "foto": "vytvarne.jpg",
+      "odkaz": "kurzy/#kreslenie"
+    },
+    {
+      "nazov": "Príprava na talentové skúšky",
+      "text": "Na stredné a vysoké umelecké školy na Slovensku aj v zahraničí.",
+      "foto": "talentovky.jpg",
+      "odkaz": "kurzy/#pripravka"
+    },
+    {
+      "nazov": "Tvorivé pobyty",
+      "text": "Tvorivé pobyty v spolupráci s CK Mattia, napríklad v Toskánsku.",
+      "foto": "pobyty.png",
+      "odkaz": "#kontakt"
+    },
+    {
+      "nazov": "Darčeková poukážka",
+      "text": "Poukážka na kurz alebo hodnotová. Štandardne platí 6 mesiacov, dá sa dohodnúť aj dlhšia platnosť.",
+      "foto": "poukazka.jpg",
+      "odkaz": "#kontakt"
+    },
+    {
+      "nazov": "Individuálne a na mieru",
+      "text": "Programy na mieru pre firmy, školy, festivaly, súkromné skupiny aj jednotlivcov.",
+      "foto": "individualne.jpg",
+      "odkaz": "#kontakt"
+    }
+  ]
+}

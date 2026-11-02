@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+{% set titulek = 'Kurzy kaligrafie a kreslenia v Bratislave – Ateliér Amulet' %}
+{% set cesta = 'kurzy/' %}
+{% block obsah %}
+<section class="sekce">
+  <div class="wrap">
+    <h1>Kurzy a termíny</h1>
+    <p class="lead-p">Aktuálna ponuka kurzov. Kurzy, ktoré momentálne nie sú vypísané, doplníme hneď po stanovení termínu.</p>
+    {% for sk, nm in [('kaligrafia','Kaligrafia'),('kreslenie','Kreslenie a maľba'),('pripravka','Príprava na talentové skúšky')] %}
+    <h2 id="{{ sk }}">{{ nm }}</h2>
+    <ul class="kurzy" role="list">
+      {% for k in data.kurzy if k.skupina == sk and k.aktivny %}
+      <li id="{{ k.id }}">
+        <h3>{{ k.nazov }}</h3>
+        {% if k.popis %}<p>{{ k.popis }}</p>{% endif %}
+        <dl>
+          <dt>Termín</dt><dd>{{ k.termin }}</dd>
+          {% if k.cas %}<dt>Čas</dt><dd>{{ k.cas }}</dd>{% endif %}
+          {% if k.cena %}<dt>Cena</dt><dd>{{ k.cena }}</dd>{% endif %}
+          {% if k.miesto %}<dt>Miesto</dt><dd>{{ k.miesto }}</dd>{% endif %}
+        </dl>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+    <p class="lead-p">Prihlásenie a otázky: <a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a> alebo cez <a href="{{ base }}#kontakt">formulár</a>.</p>
+  </div>
+</section>
+{% endblock %}

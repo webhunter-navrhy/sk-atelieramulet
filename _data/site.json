@@ -1,0 +1,55 @@
+{
+  "slug": "sk-atelieramulet",
+  "nazev": "Ateliér Amulet",
+  "url": "https://webhunter-navrhy.github.io/sk-atelieramulet/",
+  "base": "/sk-atelieramulet/",
+  "lang": "sk",
+  "popis": "Ateliér Amulet v Bratislave: kurzy kaligrafie, kreslenia a maľovania, príprava na talentové skúšky a tvorivé pobyty. Viac ako 15 rokov skúseností.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.png",
+  "theme_color": "#fbf8ee",
+  "typ": "EducationalOrganization",
+  "ico": "",
+  "kontakt": {
+    "email": "kontakt@atelieramulet.sk",
+    "telefon": "",
+    "adresa": {
+      "ulice": "",
+      "psc": "",
+      "mesto": "Bratislava",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [
+    "https://www.facebook.com/atelieramulet",
+    "https://www.instagram.com/atelieramulet",
+    "https://www.youtube.com/user/atelieramulet"
+  ],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Správa z webu Ateliér Amulet"
+  },
+  "nav": [
+    {
+      "text": "Kurzy",
+      "href": "kurzy/"
+    },
+    {
+      "text": "Ateliér",
+      "href": "#atelier"
+    },
+    {
+      "text": "Články",
+      "href": "clanky/"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

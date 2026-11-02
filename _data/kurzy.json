@@ -1,0 +1,101 @@
+[
+  {
+    "id": "pismo-a-obraz",
+    "nazov": "Písmo a obraz",
+    "skupina": "kaligrafia",
+    "popis": "",
+    "termin": "pondelky 28. 9. – 30. 11. 2026",
+    "cas": "16:45 – 18:30",
+    "cena": "",
+    "miesto": "Zichyho palác, Ventúrska 9, Bratislava",
+    "aktivny": true
+  },
+  {
+    "id": "kaligrafia-pre-kazdeho",
+    "nazov": "Kaligrafia pre každého",
+    "skupina": "kaligrafia",
+    "popis": "Základy latinkovej kaligrafie pre začiatočníkov aj mierne pokročilých. Zoznámite sa s tradičnými kaligrafickými pomôckami, naučíte sa pracovať so zrezaným pierkom a tušom, osvojíte si základné ťahy a kurzívnu abecedu. Maximálne 8 účastníkov.",
+    "termin": "7. november, 12. december, 16. január 2027 (soboty)",
+    "cas": "9:30 – 13:00",
+    "cena": "59 € (prihlásená dvojica −10 %, opakujúci kurz 29 € pri voľnom mieste)",
+    "miesto": "Ateliér kaligrafie, Alstrova 8, Bratislava-Rača",
+    "aktivny": true
+  },
+  {
+    "id": "anglicky-krasopis",
+    "nazov": "Anglický krasopis",
+    "skupina": "kaligrafia",
+    "popis": "Kurz písania pružným špicatým pierkom v násadke. Získate kvalitné základy klasického „anglického“ krasopisu a písma Copperplate. Lektorka: Mgr. Jana Findlová.",
+    "termin": "8. november 2026 (nedeľa)",
+    "cas": "9:30 – 12:30",
+    "cena": "65 € (absolventi kurzu Kaligrafia pre každého 59 €, opakovací kurz 35 €)",
+    "miesto": "Ateliér, Alstrova 6, Bratislava-Rača",
+    "aktivny": true
+  },
+  {
+    "id": "moderna-kaligrafia",
+    "nazov": "Moderná kaligrafia",
+    "skupina": "kaligrafia",
+    "popis": "",
+    "termin": "8. november 2026 (nedeľa)",
+    "cas": "13:30 – 16:30",
+    "cena": "65 €",
+    "miesto": "Ateliér, Alstrova 8, Bratislava-Rača",
+    "aktivny": true
+  },
+  {
+    "id": "zaklady-azijskej-kaligrafie",
+    "nazov": "Základy ázijskej kaligrafie",
+    "skupina": "kaligrafia",
+    "popis": "",
+    "termin": "28. november 2026",
+    "cas": "15:30 – 18:30",
+    "cena": "59 €",
+    "miesto": "Nová Cvernovka, Račianska 80, Bratislava",
+    "aktivny": true
+  },
+  {
+    "id": "cajova-kaligrafia",
+    "nazov": "Čajová kaligrafia",
+    "skupina": "kaligrafia",
+    "popis": "",
+    "termin": "29. november 2026",
+    "cas": "15:30 – 18:30",
+    "cena": "65 €",
+    "miesto": "Nová Cvernovka, Račianska 80, Bratislava",
+    "aktivny": true
+  },
+  {
+    "id": "kreslenie-hemisfer",
+    "nazov": "Kreslenie prepájaním hemisfér",
+    "skupina": "kreslenie",
+    "popis": "Dvojdňový kurz kreslenia. Maximálne 8 účastníkov.",
+    "termin": "5. – 6. december 2026",
+    "cas": "10:00 – 18:00",
+    "cena": "165 € (opakovací kurz 40 € za deň)",
+    "miesto": "Nová Cvernovka, Račianska 80, Bratislava",
+    "aktivny": true
+  },
+  {
+    "id": "tusova-malba",
+    "nazov": "Kaligrafická tušová maľba",
+    "skupina": "kreslenie",
+    "popis": "",
+    "termin": "13. december 2026",
+    "cas": "",
+    "cena": "",
+    "miesto": "",
+    "aktivny": true
+  },
+  {
+    "id": "pripravka-talentovky",
+    "nazov": "Príprava na talentové skúšky",
+    "skupina": "pripravka",
+    "popis": "Pomôžeme Ti pripraviť sa na talentové skúšky na stredné a vysoké umelecké školy na Slovensku aj v zahraničí. Prípravu prispôsobujeme veku, skúsenostiam aj požiadavkám konkrétnej školy.",
+    "termin": "podľa individuálnej dohody",
+    "cas": "",
+    "cena": "úvodná konzultácia 40 € / 90 min",
+    "miesto": "Bratislava (Nová Cvernovka, Račianska 80) a Stupava (Debnáreň 1)",
+    "aktivny": true
+  }
+]

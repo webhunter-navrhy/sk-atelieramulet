@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% set titulek = 'Články o kaligrafii a kreslení – Ateliér Amulet' %}
+{% set cesta = 'clanky/' %}
+{% block obsah %}
+<section class="sekce">
+  <div class="wrap uzky">
+    <h1>Články</h1>
+    {% for c in data.clanky %}
+    <article id="{{ c.id }}" class="clanok">
+      <h2>{{ c.nazov }}</h2>
+      <p class="datum">{{ c.datum }}</p>
+      {% for o in c.text %}<p>{{ o }}</p>{% endfor %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

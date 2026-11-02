@@ -1,0 +1,74 @@
+{% extends "_base.html" %}
+{% set titulek = 'Ateliér Amulet Bratislava – kurzy kaligrafie, kreslenia a maľovania' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="nadpis-mini">Ateliér Amulet · Bratislava</p>
+      <h1>{{ data.texty.hero_nadpis }}</h1>
+      <p class="lead">{{ data.texty.hero_text }}</p>
+      <p><a class="tlacidlo" href="{{ url('kurzy') }}">Pozrieť kurzy</a> <a class="tlacidlo druhe" href="#kontakt">Napísať nám</a></p>
+    </div>
+    <div class="hero-foto">{{ img('hero.jpg', 'Kaligrafické pierka, štetce a pastelky v ateliéri', sizes='(min-width: 60rem) 40rem, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce" id="ponuka">
+  <div class="wrap">
+    <h2>Čo u nás nájdete</h2>
+    <ul class="karty" role="list">
+      {% for p in data.texty.ponuka %}
+      <li class="karta"><a href="{{ base }}{{ p.odkaz }}">{{ img(p.foto, p.nazov, sizes='(min-width: 60rem) 24rem, 90vw') }}<h3>{{ p.nazov }}</h3><p>{{ p.text }}</p></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tyrkys" id="terminy">
+  <div class="wrap">
+    <h2>Najbližšie termíny</h2>
+    <ul class="terminy" role="list">
+      {% for k in data.kurzy if k.aktivny and k.cas and k.skupina != 'pripravka' %}{% if loop.index <= 6 %}
+      <li><strong>{{ k.termin }}</strong><span>{{ k.nazov }}</span><small>{{ k.cas }}{% if k.cena %} · {{ k.cena.split(' (')[0] }}{% endif %}</small></li>
+      {% endif %}{% endfor %}
+    </ul>
+    <p><a class="tlacidlo" href="{{ url('kurzy') }}">Všetky kurzy a podrobnosti</a></p>
+  </div>
+</section>
+
+<section class="sekce" id="atelier">
+  <div class="wrap">
+    <h2>O ateliéri</h2>
+    {% for o in data.texty.o_nas %}<p class="lead-p">{{ o }}</p>{% endfor %}
+    <ul class="tim" role="list">
+      {% for t in data.texty.tim %}
+      <li>{{ img(t.foto, t.meno, sizes='160px', cls='kruh') }}<strong>{{ t.meno }}</strong><span>{{ t.rola }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce krem2" id="clanky">
+  <div class="wrap">
+    <h2>Z nášho blogu</h2>
+    <ul class="clanky-nahlad" role="list">
+      {% for c in data.clanky[:3] %}
+      <li><a href="{{ url('clanky') }}#{{ c.id }}"><h3>{{ c.nazov }}</h3><p>{{ c.text[0][:150] }}…</p></a></li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ url('clanky') }}">Všetky články →</a></p>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Napíšte nám</h2>
+      <p>Radi odpovieme na otázky k termínom, kurzom, poukážkam aj programom na mieru.</p>
+      <p><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}
