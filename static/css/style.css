@@ -15,12 +15,12 @@ h1{font-size:clamp(2.2rem,5vw,3.6rem)}h2{font-size:clamp(1.6rem,3vw,2.2rem)}h3{f
 .wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}.uzky{max-width:46rem}
 .skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.5rem;z-index:20}
 .hlavicka{position:sticky;top:0;z-index:10;background:rgba(251,248,238,.95);backdrop-filter:blur(6px);border-bottom:1px solid #e4dcc6}
-.hlavicka .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem;flex-wrap:wrap}
-.logo img{height:40px;width:auto}
+.hlavicka .wrap{display:flex;align-items:center;justify-content:space-between;gap:.8rem;min-height:4.4rem}
+.logo img{height:56px;width:auto}
 .hlavicka nav{display:flex;gap:1.4rem;flex-wrap:wrap}.hlavicka nav a{padding:.55rem .2rem;text-decoration:none;color:var(--fial-t);font-weight:700}
 .hlavicka nav a:hover{color:var(--fial)}
 .hero{padding:3rem 0 2rem}.hero-grid{display:grid;gap:2rem;align-items:center}
-.hero-foto img{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-foto img{border-radius:var(--r) var(--r) 120px var(--r);width:100%;aspect-ratio:5/4;object-fit:cover;box-shadow:0 18px 40px rgba(51,9,104,.18)}
 .nadpis-mini{text-transform:uppercase;letter-spacing:.12em;font-size:.85rem;color:var(--fial);margin:0 0 .8rem}
 .lead{font-size:1.25rem;max-width:34rem}
 .tlacidlo,button{display:inline-block;background:var(--fial);color:#fff;padding:.8rem 1.5rem;border-radius:999px;text-decoration:none;font:700 1rem "PT Serif",serif;border:2px solid var(--fial);cursor:pointer;margin:.3rem .4rem .3rem 0}
@@ -51,5 +51,19 @@ input:focus,textarea:focus,a:focus-visible,button:focus-visible{outline:3px soli
 .kurzy dl{display:grid;grid-template-columns:auto 1fr;gap:.25rem 1rem;margin:0;font-size:.97rem}.kurzy dt{font-weight:700;color:var(--fial)}.kurzy dd{margin:0}
 .clanok{padding:1.5rem 0;border-top:1px solid #e4dcc6}.datum{color:#6b5a88;font-size:.9rem;margin-top:-.4rem}
 .paticka{background:var(--fial-t);color:#e9e0f7;padding:2rem 0;margin-top:0}.paticka a{color:#fff}.paticka p{margin:.3rem 0}
-@media(min-width:60rem){.hero-grid{grid-template-columns:1fr 1fr}.kontakt-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:60rem){.hero-grid{grid-template-columns:5fr 6fr}.kontakt-grid{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.tah{position:relative;padding-bottom:.55em}
+.tah::after{content:"";position:absolute;left:0;bottom:0;width:min(11rem,60%);height:12px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 176 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C30 2 60 11 92 6 S150 3 174 7' fill='none' stroke='%237030a0' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;background-size:100% 100%}
+.tyrkys .tah::after{filter:hue-rotate(0deg) brightness(.35)}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem)}
+.rozvrh{list-style:none;margin:0 0 1.5rem;padding:0}
+.rozvrh li{display:grid;grid-template-columns:1fr;gap:.3rem;padding:1.1rem 0;border-top:1.5px solid rgba(0,74,89,.25)}
+.rozvrh .dat{font-size:1.35rem;color:var(--fial-t)}.rozvrh b{display:block;font-size:1.15rem}.rozvrh small{display:block}.rozvrh .cena{font-weight:700}
+.rozvrh .tlacidlo{justify-self:start;margin:.3rem 0 0}
+@media(min-width:48rem){.rozvrh li{grid-template-columns:15rem 1fr 6rem auto;align-items:center;gap:1.5rem}.rozvrh .tlacidlo{margin:0}}
+.blog{list-style:none;margin:0 0 1rem;padding:0}.blog li{border-top:1.5px solid #d9cfb6}
+.blog a{display:block;padding:1.2rem 0;text-decoration:none;color:var(--text)}.blog h3{margin:.1rem 0 .3rem;font-size:1.4rem}.blog p{margin:0;max-width:46rem}.blog .datum{margin:0}
+.blog a:hover h3{color:var(--fial)}
+@media(max-width:40rem){.logo img{height:44px}.hlavicka nav{gap:.7rem}.hlavicka nav a{font-size:.88rem}.hlavicka .wrap{min-height:3.6rem}}
